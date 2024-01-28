@@ -33,15 +33,15 @@ int isPrime(int num)
 
 }
 float squareRoot(float num) {
-     float guess = number / 2; 
+     float guess = num / 2; 
     float epsilon = 0.0001;   
 
    
     for (int i = 0; i < 1000; i++) {
-        guess = 0.5 * (guess + number / guess);
+        guess = 0.5 * (guess + num / guess);
 
        
-        if (number - guess * guess < epsilon)
+        if (num - guess * guess < epsilon)
             break;
     }
 
