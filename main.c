@@ -6,12 +6,21 @@
 
 int main() {
 
+int min,max;
 
+    int y, x;
 
-    int min, max;;
-
-    scanf("%d%d",&min,&max);
-
+    scanf("%d%d",&y,&x);
+if(x>y)
+{
+min=y;
+max=x;
+}
+else
+{
+    min=x;
+    max=y;
+}
 
 
     printf("The Armstrong numbers are:");
