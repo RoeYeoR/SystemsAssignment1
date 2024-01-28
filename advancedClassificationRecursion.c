@@ -81,10 +81,10 @@ int getNumOfDigits(int x)
 }
 
 int power(int base, int exponent) {
-    int result = 1;
-    while (exponent != 0) {
-        result *= base;
-        --exponent;
-    }
+     int result =1;
+    for(int i =0;i<exponent;i++)
+     {
+         result*=base
+     }
     return result;
 }
