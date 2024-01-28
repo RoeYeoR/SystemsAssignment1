@@ -34,7 +34,7 @@ int isArmStrongHelper(int num,  int numOfDigits)
 
         return 0;
 
-    return  power(num%10, numOfDigits) + isArmStrongHelper(num/10, numOfDigits);
+    return  power2(num%10, numOfDigits) + isArmStrongHelper(num/10, numOfDigits);
 
 }
 
@@ -59,7 +59,7 @@ int isPalindromeHelper(int num , int i)
 
         return 0;
 
-    return (num % 10) * power(10,i-1) + isPalindromeHelper(num/10, i-1);
+    return (num % 10) * power2(10,i-1) + isPalindromeHelper(num/10, i-1);
 }
 
 int getNumOfDigits(int x)
