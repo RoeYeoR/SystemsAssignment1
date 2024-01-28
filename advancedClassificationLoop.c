@@ -6,7 +6,7 @@
 
 
 int getNumberOfDigits(int);
-int power(int , int);
+int power1(int , int);
 
 
 
@@ -70,7 +70,7 @@ int isPalindrome(int num)
 
 }
 
-int power(int base, int exponent) {
+int power1(int base, int exponent) {
     int result =1;
     for(int i =0;i<exponent;i++)
      {
