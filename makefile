@@ -21,15 +21,15 @@ all: mains maindloop maindrec loops recursives recursived loopd
 
 
 mains: $(MAIN:.c=.o) $(LIBRS)
-	$(CC) $(CFLAGS) $< ./$(LIBRS) -lm -o $@
+	$(CC) $(CFLAGS) $< ./$(LIBRS) -o $@
 
 
 maindloop: $(MAIN:.c=.o) $(LIBLD)
-	$(CC) $(CFLAGS) $< ./$(LIBLD) -lm -o $@
+	$(CC) $(CFLAGS) $< ./$(LIBLD) -o $@
 
 
 maindrec: $(MAIN:.c=.o) $(LIBRD)
-	$(CC) $(CFLAGS) $< ./$(LIBRD) -lm -o $@
+	$(CC) $(CFLAGS) $< ./$(LIBRD) -o $@
 
 loops: $(LIBLS)
 
