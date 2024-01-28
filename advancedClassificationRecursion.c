@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-#include <math.h>
 
 #include "NumClass.h"
 
@@ -11,6 +10,7 @@ int isArmStrongHelper(int, int);
 
 int isPalindromeHelper(int,int);
 
+int power(int , int);
 
 int isArmstrong(int num)
 
@@ -34,7 +34,7 @@ int isArmStrongHelper(int num,  int numOfDigits)
 
         return 0;
 
-    return  pow(num%10, numOfDigits) + isArmStrongHelper(num/10, numOfDigits);
+    return  power(num%10, numOfDigits) + isArmStrongHelper(num/10, numOfDigits);
 
 }
 
@@ -59,7 +59,7 @@ int isPalindromeHelper(int num , int i)
 
         return 0;
 
-    return (num % 10) * pow(10,i-1) + isPalindromeHelper(num/10, i-1);
+    return (num % 10) * power(10,i-1) + isPalindromeHelper(num/10, i-1);
 }
 
 int getNumOfDigits(int x)
@@ -78,4 +78,13 @@ int getNumOfDigits(int x)
 
     return counter;
 
+}
+
+int power(int base, int exponent) {
+    int result = 1;
+    while (exponent != 0) {
+        result *= base;
+        --exponent;
+    }
+    return result;
 }
