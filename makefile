@@ -7,7 +7,7 @@ AR = ar
 
 
 
-CFLAGS = -Wall -g
+CFLAGS = -Wall
 
 
 
