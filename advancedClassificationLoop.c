@@ -22,7 +22,7 @@ int isArmstrong(int num)
 
   {
 
-   int powerDigit = power((num%10),getNumberOfDigits(num));
+   int powerDigit = power1((num%10),getNumberOfDigits(num));
 
    num/=10;
 
