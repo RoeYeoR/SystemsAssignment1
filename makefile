@@ -1,3 +1,7 @@
+#$@ the current target file
+#$^ all sources listed for the current target
+#$< the first (left-most) source for the current target
+
 CC = gcc
 AR = ar
 
