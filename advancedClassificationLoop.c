@@ -74,7 +74,7 @@ int power1(int base, int exponent) {
     int result =1;
     for(int i =0;i<exponent;i++)
      {
-         result*=base
+         result*=base;
      }
     return result;
 }
