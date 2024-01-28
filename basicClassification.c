@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-#include <math.h>
 
 #include "NumClass.h"
 
+float squareRoot(float num);
 
 long factorial(int);
 
@@ -19,7 +19,7 @@ int isPrime(int num)
 
     }
 
-    for(int i =2; i<= sqrt(num);i++)
+    for(int i =2; i<= (squareRoot(num));i++)
 
     {
 
@@ -31,6 +31,17 @@ int isPrime(int num)
 
     return 1;
 
+}
+float squareRoot(float num) {
+    float x = num;
+    float y = 1;
+    float epsilon = 0.00001; // Define the desired precision
+    
+    while (x - y > epsilon) {
+        x = (x + y) / 2;
+        y = num / x;
+    }
+    return x;
 }
 
 
