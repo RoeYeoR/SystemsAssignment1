@@ -10,7 +10,7 @@ int isArmStrongHelper(int, int);
 
 int isPalindromeHelper(int,int);
 
-int power(int , int);
+int power2(int , int);
 
 int isArmstrong(int num)
 
@@ -80,7 +80,7 @@ int getNumOfDigits(int x)
 
 }
 
-int power(int base, int exponent) {
+int power2(int base, int exponent) {
      int result =1;
     for(int i =0;i<exponent;i++)
      {
